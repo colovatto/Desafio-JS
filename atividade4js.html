@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body>
+    <div id="botao">
+        <button id="Exibir" onclick="exibir('texto')">Exibir</button> <!--Botão com função de exibir-->
+        <button id="ocultar" onclick="ocultar('texto')">Ocultar</button> <!--Botão com função de ocultar-->
+    </div>
+
+    <div id="texto">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestias!</p>
+    </div>
+
+    <script>
+
+       function ocultar(texto){
+        var text = document.getElementById(texto).hidden = true; //busca id do <p> e oculta 
+       }
+
+       function exibir(texto){
+        var text = document.getElementById(texto).hidden = false; //busca id do <p> e exibe
+       }
+    </script>
+</body>
+
+</html>

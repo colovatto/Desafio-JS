@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body>
+    
+    <input type="radio" name="color" id="red" onclick="corRed()">Vermelho</input> <!--Botão com função de quando clicar alterar cor-->
+    <input type="radio" name="color" id="green" onclick="corGreen('green')">Verde</input>
+    <input type="radio" name="color" id="blue" onclick="corBlue('blue')">Azul</input>
+    <input type="radio" name="color" id="yellow" onclick="corYellow('yellow')">Amarelo</input>
+
+    <script>
+        function corRed()
+        {
+            document.body.style.backgroundColor = 'red'; //altera cor do background
+        }
+        function corGreen()
+        {
+            document.body.style.backgroundColor = 'green';
+        }
+        function corBlue()
+        {
+            document.body.style.backgroundColor = 'blue';
+        }
+        function corYellow()
+        {
+            document.body.style.backgroundColor = 'yellow';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body id="div">
+	
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ratione veritatis tempore aliquam praesentium possimus in nam corrupti non aut!</p>
+
+	<button id="" onclick=mudarFontePreta()>Alterar Fonte: Preta</button>
+	<button id="" onclick=mudarFonteBranca()> Alterar Fonte: Branca</button>
+	<button id="" onclick=mudarFundoBranco()>Alterar Fundo: Branco</button>
+	<button id="" onclick=mudarFundoPreto()>Alterar Fundo: Preto</button>
+	<button id="" onclick=aumentarFonte()>+</button>
+	<button id="" onclick=diminuirFonte()>-</button>
+	<button id="" onclick=capsLock()>MAIUSCULA</button>
+	<button id="" onclick=minuscula()>minuscula</button>
+
+	<script>
+		
+		function mudarFontePreta(){
+			let p = document.getElementById("p");
+			let fonte = ["black"];
+			div.style.color = fonte;
+		}
+		function mudarFonteBranca(){
+			let p = document.getElementById("p");
+			let fonte = ["white"];
+			div.style.color = fonte; //função de alterar cor da fonte
+		}
+		 function mudarFundoBranco() {
+            let div = document.getElementById("div"); 
+            let fundo = ["white"];
+            div.style.backgroundColor = fundo
+        }
+        function mudarFundoPreto() {
+            let div = document.getElementById("div");
+            let fundo = ["black"];
+            div.style.backgroundColor = fundo //função de alterar cor do fundo
+        }
+		tamanho = 16;
+		function aumentarFonte(){
+			tamanho++; //acrescenta 1 no tamanho da fonte
+			document.body.style.fontSize = tamanho + "px"; //função de alterar fonte
+		}
+		function diminuirFonte(){
+			tamanho--; //reduz 1 no tamanho da fonte
+			document.body.style.fontSize = tamanho + "px"; 
+		}
+		function capsLock(){
+			let p = document.getElementById("p");
+			p.style.textTransform = "uppercase"; //função de deixar em caixa alta
+		}
+		function minuscula(){
+			let p = document.getElementById("p");
+			p.style.textTransform = "lowercase"; //função de deixar em minusculo
+
+		}
+        
+
+
+    </script>
+</body>
+
+</html>

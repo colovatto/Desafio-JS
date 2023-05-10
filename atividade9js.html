@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body>
+
+	<form method="post">
+		<!--Como todos os botões são necessários botão irá enviar apenas se senha for validada-->
+		<label for="login"><input type="text" id="login" placeholder="Login" required></label> <br>
+		<label for="senha"><input type="password" id="senha" placeholder="Senha" minlength="6" maxlength="10" required></label> <!--Senha com definição de tamanho-->
+		<label for="confSenha"><input type="password" id="confSenha" placeholder="Confirmar Senha" minlength="6" maxlength="10" required></label>
+		<br>
+		<br>
+	<label for="btn"><button type="submit" id="btn" onclick=Valida() required>Logar</button></label> <!--chama a função de validar senha-->
+	</form>
+	
+    
+
+	<script>
+		
+		function Valida(){		
+		var senha = document.getElementById('senha').value; //busca o valor de senha e adiciona em uma váriavel
+		var confirmarSenha = document.getElementById('confSenha').value; //o mesmo aqui para confSenha
+
+		if(senha == confirmarSenha) //verifica se os valores são identicos
+		{
+			return true; //botão envia
+		}
+		else{
+			alert("As senhas não são iguais")
+			return false; //botão não envia e aciona mensagem de erro
+		}
+	}
+		
+
+
+    </script>
+</body>
+
+</html>

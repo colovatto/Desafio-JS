@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body>
+    <form>
+        <!-- Formulário de checkbox e botão de enviar desabilitado-->
+		<label for="1"><input type="checkbox" > Mansões</label> 
+		<label for="2"><input type="checkbox" > Carros</label>
+		<label for="3"><input type="checkbox" > Dinheiro</label>
+		<label for="4"><input type="checkbox" > Família</label>
+		<button type="submit" id="btn" disabled>Enviar</button> <!--botão desabilitado-->
+	</form>
+
+	<script>
+        // constante para verificar quantos checkbox existem
+		const check = document.querySelectorAll('input[type=checkbox]'); 
+		const btn = document.getElementById('btn');
+
+		check.forEach((check) => { //selecionar cada checkbox
+			check.addEventListener('click', () => { //caso seja clicado
+				const contador = document.querySelectorAll('input[type=checkbox]:checked').length; //checar qual está flegado dentro do pararametro length
+
+				if (contador >= 2) { //condição para o botão funcionar
+					btn.disabled = false;
+                }
+			});
+		});
+
+
+    </script>
+</body>
+
+</html>

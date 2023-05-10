@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="teste.js"></script>
+</head>
+
+<body id="div">
+    <div>
+        <button id="" onclick=mudarCorVermelho()>Vermelho</button> <!--quando clicar alterar a cor do fundo-->
+        <button id="" onclick=mudarCorVerde()>Verde</button>
+        <button id="" onclick=mudarCorAzul()>Azul</button>
+        <button id="" onclick=mudarCorAmarelo()>Amarelo</button>
+    </div>
+    <script>
+        function mudarCorVermelho() {
+            let div = document.getElementById("div"); //busca id e adiciona em uma váriavel
+            let cor = ["red"];
+            div.style.backgroundColor = cor //alterar a cor do fundo
+        }
+        function mudarCorVerde() {
+            let div = document.getElementById("div");
+            let cor = ["green"];
+            div.style.backgroundColor = cor
+        }
+        function mudarCorAzul() {
+            let div = document.getElementById("div");
+            let cor = ["blue"];
+            div.style.backgroundColor = cor
+        }
+        function mudarCorAmarelo() {
+            let div = document.getElementById("div");
+            let cor = ["yellow"];
+            div.style.backgroundColor = cor
+        }
+    </script>
+
+
+</body>
+
+</html>
